@@ -1,5 +1,5 @@
-body {
-    background-image: linear-gradient(to bottom, rgb(205, 0, 0), yellow);
+#body {
+    background-image: linear-gradient(to bottom, rgb(231, 28, 28), yellow);
 }
 
 #cliquebotoes {
@@ -23,7 +23,9 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: block;
     margin-bottom: 35px;
+    text-decoration: none;
 }
+
 
 #botao2 {
     text-align: center;
@@ -73,7 +75,8 @@ body {
 }
 
 #botao4:hover {
-    color: yellow;
+    color: rgb(255, 0, 0);
+    cursor: not-allowed;
 }
 
 #botao3:hover {
@@ -88,6 +91,15 @@ body {
     color: yellow;
 }
 
-@keyframes fade-in{
-    
+@keyframes fadeOut{
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
+#arvorepreta {
+    position: fixed;
+    bottom: -200;
+    width: 1200px;
+    left: 140;
+    z-index: -200;
 }

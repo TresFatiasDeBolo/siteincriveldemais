@@ -5,25 +5,40 @@
     <link rel="stylesheet" href="estilo.css">
     <title>...</title>
 </head>
-<body>
+<body id="body">
 
-    <h1 id="cliquebotoes">Clique em algum destes botões e veja o quê acontece.</h1>
+    <h1 id="cliquebotoes", onclick="document.getElementById('cliquebotoes').innerHTML = 'Você clicou no título...?'">
+        
+        Clique em algum destes botões e veja o quê acontece.
+    </h1>
 
-    <button id="botao1">
-        Clique aqui!
-    </button>
-    
-    <button id="botao2">
+    <a href="https://www.youtube.com/@fatiasdepizza", id="linkbotao1">
+
+        <button href id="botao1", onclick="innerHTML = 'Ótima escolha!'", >
+            Clique aqui!
+        </button>
+
+</a>
+
+    <button id="botao2", onclick="document.getElementById('arvorepreta').style.display = 'none'">
+        
         Pode clicar nesse, também!
     </button>
 
-    <button id="botao3", onclick="">
-        Você deveria clicar nesse!
+    <button id="botao3">
+        Você deveria clicar neste aqui!
     </button>
 
-    <button id="botao4", onclick="innerHTML = 'Eu falei pra você não clicar!' ">
+    <button id="botao4", onclick="innerHTML = 'Eu falei pra você não clicar!'; document.getElementById('botao1').innerHTML = 
+    'Eu falei pra você não clicar!'; document.getElementById('botao2').innerHTML = 
+    'Eu falei pra você não clicar!'; document.getElementById('botao3').innerHTML = 
+    'Eu falei pra você não clicar!'; document.getElementById('cliquebotoes').innerHTML = 'Eu falei pra você não clicar!'">
         Na verdade, não clique nesse aqui.
     </button>
+
+    <div>
+        <img src="arvorespretas.webp" alt="árvores pretas no fundo", id="arvorepreta">
+    </div>
 
 </body>
 </html>
